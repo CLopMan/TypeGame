@@ -1,8 +1,8 @@
+<h1 id="begin" align="center">
+    TypeGame
+</h1>
 <p  align="center">
-    <h1 id="begin" align="center">
-        TypeGame
-    </h1>
-    A console mini-game to practice typing speed and precission
+       A console mini-game to practice typing speed and precission
 </p>
 
 <br>
