@@ -1,5 +1,5 @@
 <p  align="center">
-    <h1 id="begin">
+    <h1 id="begin" align="center">
         TypeGame
     </h1>
     A console mini-game to practice typing speed and precission
@@ -165,4 +165,6 @@ Now we have time and number of correctly and incorrectly spelled characters, so 
 #### When does the game finish?
 Since we are going to use `std::getline()` function, the user must press `enter` when finished. 
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
