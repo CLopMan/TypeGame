@@ -40,7 +40,9 @@ It is inspired on [monkeytype](https://www.monkeytype.com). Though it will not b
 # Instalation and usage 
 Currently there is no usable version of the project.
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 # Development
 In this section it will be documented the different steps I followed to implement this game, from the functionality specification to the final project. In addition, I will journal the actual developing process.
