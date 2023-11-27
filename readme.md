@@ -1,9 +1,11 @@
+<html>
 <center>
     <h1 id="begin">
         TypeGame
     </h1>
     A console mini-game to practice typing speed and precission
 </center>
+</html>
 
 <br>
 <details>
