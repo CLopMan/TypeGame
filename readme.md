@@ -135,7 +135,7 @@ std::chrono::duration_cast<std::chrono::milliseconds>(timestampB - timestampA).c
 </p>
 
 #### Keyboard input
-The unique problem I encounter implementing this is that spaces normaly are used to split the input. Since I need to keep the spaces as inputs, the soliution is to use `std::getline(stream, buffer)` to read the complete line instead of stopping on the first space. 
+The unique problem I encounter implementing this is that spaces normally are used to split the input. Since I need to keep the spaces as inputs, the solution is to use `std::getline(stream, buffer)` to read the complete line instead of stopping on the first space. 
 
 <p  align="right">
     <a href=#begin>[(back to top)]</a>
@@ -143,11 +143,11 @@ The unique problem I encounter implementing this is that spaces normaly are used
 
 #### Count correct an incorrect characters after an input
 This function is prety simple, there are 3 possibilities: 
-- Input is shorter that the text: compare every character of the input with its counterpart. After that, add to c_failed the absolute difference between input and text sizes.
+- Input is shorter that the text: compare every character of the input with its counterpart. After that, add to c_failed the absolute difference between input and text size.
 - Input hast the same size that text: compare every character in input to its counterpart in text. 
-- Input has more characters than text: compare every character of the text with its counterpart in the input. Then, add to c_failed the absolute difference between input and text sizes. 
+- Input has more characters than text: compare every character of the text with its counterpart in the input. Then, add to c_failed the absolute difference between input and text size. 
 
-Generalize this function is pretty simple: 
+Generalizing this function is pretty simple: 
 
 ```cpp
 for (int i = 0; i < std::min(text.lenght(), input.lenght()); ++i) {
