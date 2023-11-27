@@ -27,7 +27,7 @@ This document does not pretend to act as a serious report about the project; its
 </p>
 
 # Idea
-This projects aims to implement a basic typing game to help improving your speed and precission. 
+This projects aims to implement a basic typing game to help improving your speed and acurracy. 
 
 The program will show a text which user must copy right beneath. If you type the next character correctly it will be green, but it will be red otherwise. 
 
