@@ -33,7 +33,9 @@ The program will show a text which user must copy right beneath. If you type the
 
 It is inspired on [monkeytype](https://www.monkeytype.com). Though it will not be so ambitious.
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 # Instalation and usage 
 Currently there is no usable version of the project.
@@ -43,7 +45,9 @@ Currently there is no usable version of the project.
 # Development
 In this section it will be documented the different steps I followed to implement this game, from the functionality specification to the final project. In addition, I will journal the actual developing process.
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 ## Functionality specification
 In this section every feature that will be implemented in the game is presented. 
@@ -60,7 +64,9 @@ In this section every feature that will be implemented in the game is presented.
     - Accuracy: (correctly_sppelled - incorrectly_sppeled)/key_strockes.
 - loop: every time the user finishes a text, they must be able to start anotherone using the apropiate key combination. 
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 ## Class interface
 - Game: one game. 
@@ -80,7 +86,9 @@ In this section every feature that will be implemented in the game is presented.
         - accuracy(): returns the accuracy
         - wpm(): return WPM
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 ## Journey
 
@@ -101,7 +109,9 @@ Having said that, there is just one question left about the simplified TypeGame:
 > - a way to indicate when whe have finished to write
 > - playable loop
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 #### Time measurement
 It must be clear that, since I need to measure the time the user takes to make an input, I must take into account *ellapsed time* (i.e. the between the start of the game and the end of it, counting detention time caused by I/O processes). Therefore, I've chosen `<chrono>` to take this measurement because it offers this exact functionality. You can check more about this library in its documentation [here](https://cplusplus.com/reference/chrono/).
@@ -118,12 +128,16 @@ Using *chrono*, there are 2 functions needed:
 std::chrono::steady_clock::time_point time_stamp = std::chrono::steady_clock::now(); // creates a time stamp with the current time
 std::chrono::duration_cast<std::chrono::milliseconds>(timestampB - timestampA).count() // calculates the difference between time stamps and transform it in the unit the programmer have indicated. 
 ```
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 #### Keyboard input
 The unique problem I encounter implementing this is that spaces normaly are used to split the input. Since I need to keep the spaces as inputs, the soliution is to use `std::getline(stream, buffer)` to read the complete line instead of stopping on the first space. 
 
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 #### Count correct an incorrect characters after an input
 This function is prety simple, there are 3 possibilities: 
@@ -142,8 +156,9 @@ c_failed += std::abs(c_correct - c_failed);
 ```
 
 Now we have time and number of correctly and incorrectly spelled characters, so we have enough to calculate the stadistics specified above. 
-
-[<div style="text-align: right">(back to top)</div>](#begin)
+<p  align="right">
+    <a href=#begin>[(back to top)]</a>
+</p>
 
 #### When does the game finish?
 Since we are going to use `std::getline()` function, the user must press `enter` when finished. 
