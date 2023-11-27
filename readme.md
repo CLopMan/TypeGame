@@ -1,11 +1,9 @@
-<center>
-    <p  align="center">
+<p  align="center">
     <h1 id="begin">
         TypeGame
     </h1>
     A console mini-game to practice typing speed and precission
-    </p>
-</center>
+</p>
 
 <br>
 <details>
@@ -25,7 +23,7 @@ I was looking for a not-college-related project to improve my C++ programming sk
 This document does not pretend to act as a serious report about the project; its goal is to describe the process I follow to develop this game. That is, describe the problems I encouter and how I solve them, and document what I learned.
 
 <p  align="right">
-    [(back to top)](#begin)
+    <a href=#begin>[(back to top)]</a>
 </p>
 
 # Idea
