@@ -62,24 +62,28 @@ In this section every feature that will be implemented in the game is presented.
 [<div style="text-align: right">(back to top)</div>](#begin)
 
 ## Class interface
-- Game: one game. 
-    - Attributes:
-        - text: text the user has to copy. Represented as an array of char. 
-        - nextChar: next character the user must type
-        - buff: stores the user input
-        - timestamp_start: when the user starts typing.
-        - timestamp_stop: when the user types the last character. 
-        - c_correct: number of correct-typed characters
-        - c_failed: number of incorrect-typed characters
-    - Methods: 
-        - Game(path): constructor
-        - Start(): initialize game - timestamp_start, takes input
-        - Stop(): initialize stops
-        - time(): returns the time it takes to complete the test
-        - accuracy(): returns the accuracy
-        - wpm(): return WPM
+### Game: 
+One game. 
+- Attributes:
+    - text: text the user has to copy. Represented as an array of char.
+    - nextChar: next character the user must type.
+    - buff: stores the user input.
+    - timestamp_start: when the user starts typing.
+    - timestamp_stop: when the user types the last character.
+    - c_correct: number of correct-typed characters.
+    - c_failed: number of incorrect-typed characters.
+- Methods: 
+    - Game(path): constructor.
+    - Start(): starts the game.
+    - Stop(): ends the game.
+    - time(): returns the time it takes to complete the test.
+    - accuracy(): returns the accuracy.
+    - wpm(): returns WPM.
 
 [<div style="text-align: right">(back to top)</div>](#begin)
+
+### Interface 
+Since is a console game, it will be a *Text User Interface* (TUI)
 
 ## Journey
 
