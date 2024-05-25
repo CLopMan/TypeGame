@@ -158,7 +158,7 @@ for (int i = 0; i < std::min(text.lenght(), input.lenght()); ++i) {
     if (text[i] == input[i]) ++c_correct;
     else ++c_failed;
 }
-c_failed += std::abs(c_correct - c_failed);
+c_failed += std::abs(text.lenght() - input.lenght());
 ```
 
 Now we have time and number of correctly and incorrectly spelled characters, so we have enough to calculate the stadistics specified above. 
@@ -172,3 +172,14 @@ Since we are going to use `std::getline()` function, the user must press `enter`
 <p  align="right">
     <a href=#begin>[(back to top)]</a>
 </p>
+
+### Second version
+
+Once implemented the first version, after some tries it is not difficult to find some cases where the systems does not work properly. 
+- Accuracy mesurement it is not as complete as it seems: the mesurement works fine if the two texts has the same lenght. However, if you forget to write just one letter at the begining the accuracy will be very low even though you complete the rest of the test perfectly. The reason behind this is the way whe compare both strings, so instead of comparing each char for the whole text, we will take this measure for each word. 
+
+$$acc = \frac{1}{l}\sum_{w}\frac{c_correct}{(c_correct + c_wrong)} $$
+
+- Too many signhanglers: It is time to implement an interface for the app instead of using signals.
+
+
